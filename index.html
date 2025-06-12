@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8" />
+<title>王華琳介紹頁</title>
+<style>
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    margin: 0;
+    font-family: "Microsoft JhengHei", sans-serif;
+    background-color: #fff6f6;
+    padding-top: 60px;
+  }
+
+  header {
+  background-color: #ffd9d9;
+  padding: 10px 30px;
+  display: flex;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  width: 96%;
+  z-index: 1000;
+}
+
+  header .logo {
+  font-size: 35px;
+  margin-right: 60px; /* 加大右邊間距（原本是 auto） */
+}
+
+  nav {
+  display: flex;
+  align-items: center;
+}
+
+nav a:hover {
+  color: #945c5c; /* 例如深粉色或其他點綴色 */
+}
+
+  nav a {
+  margin-left: 40px;
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+}
+
+  nav a:first-child {
+  margin-left: 0;
+}
+
+  a {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 40px 80px;
+  }
+
+  /* 左側圖片與中間方格合成一組 flex 容器 */
+  .left-container {
+    width: 60%;
+    display: flex;
+    gap: 20px;
+  }
+
+  .left-panel {
+    flex: 1;
+  }
+
+  .left-panel img {
+    width: 143%;
+    border-radius: 20px;
+  }
+
+  .middle-box {
+    flex: 1;
+    background-color: #f4dada;
+    border-bottom-right-radius: 16px;
+    border-top-right-radius: 16px;
+    text-align:center;
+    font-size: 30px;
+    font-weight: bold;
+    color:#a16363;
+    padding:100px 20px 20px 20px;
+
+  }
+
+  .right-panel {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .tarot-card {
+    background-color: #fff2cc;
+    background-size: 80px 80px;
+    border-radius: 10px;
+    padding: 25px;
+    text-align: center;
+    font-weight: bold;
+  }
+
+  .tarot-card span {
+    display: block;
+    margin-top: 25px;
+    font-size:35px;
+  }
+
+  .description {
+    background-color: #ffece8;
+    background-size: 80px 80px;
+    border-radius: 16px;
+    margin: 10px 80px;
+    padding: 40px;
+    font-size: 20px;
+    line-height: 1.8;
+    color: #333;
+  }
+
+  .newsheader {
+  background-color: #fff2cc;
+  margin: 80px 80px 20px;  /* 讓 header 置左 */
+  padding-left: 60px;
+  padding-right:60px;
+  padding-top:20px;
+  padding-bottom:20px;
+  border-radius: 12px;
+  width: fit-content;
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  scroll-margin-top: 80px;
+  }
+
+  .gallery {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 40px;
+  }
+
+  .artwork {
+    width: 30%;
+    background-color: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .artwork img {
+    height:400px;
+    width: 600px;
+    display: block;
+  }
+
+  .artwork .title {
+    margin: 16px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align:center;
+  }
+
+  .artwork .subtitle {
+    margin: 0 16px 16px 16px;
+    font-size: 14px;
+    color: #555;
+    text-align: center;
+  }
+
+  .artwork .quote {
+    font-size: 14px;
+    margin: 0 16px 16px 16px;
+    color: #666;
+    text-align: center;
+    font-style: italic;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <a href="" target="_blank" style="text-decoration: none; color: inherit;">
+    <div class="logo">🎀</div>
+  </a>
+  <nav>
+    <a href="#">自我介紹</a>
+    <a href="#newsheader1">藝文新聞</a>
+    <a href="#newsheader2">文字專題</a>
+    <a href="#newsheader3">影音新聞</a>
+  </nav>
+</header>
+
+<div class="container">
+  <!-- 新增 left-container，讓圖片與方格並排 -->
+  <div class="left-container">
+    <div class="left-panel">
+      <img src="王華琳的照片.JPG" alt="王華琳照片">
+    </div>
+
+    <div class="middle-box">
+        <div>＃狐狸</div>
+        <div>#Waacking Girl</div>
+        <div>＃INFJ</div>
+        <div>＃工作狂</div>
+        <div>＃極繁主義</div>
+    
+    </div>
+  </div>
+
+  <div class="right-panel">
+    <a href="#newsheader1" style="text-decoration: none; color: inherit;">
+      <div class="tarot-card">
+      The Empress<span>女皇</span>
+      </div>
+    </a>
+    <a href="#newsheader1" style="text-decoration: none; color: inherit;">
+      <div class="tarot-card">
+      The Hermit<span>隱者</span>
+      </div>
+    </a>
+    <a href="#newsheader3" style="text-decoration: none; color: inherit;">
+      <div class="tarot-card">
+        The Magician<span>魔術師</span>
+      </div>
+    </a>
+  </div>
+</div>
+
+<div class="description">
+  我是王華琳，一個內斂執著的創作者，習慣在安靜中觀察世界，用文字整理思緒。喜歡獨處，也享受深入人心的對話。比起喧嚷，我更愛在靜謐中尋找靈感，將細膩感受化為故事。
+</div>
+
+<div class="newsheader" id="newsheader1">
+    The Magician<br>藝文新聞
+</div>
+
+<div class="gallery">  
+  <div class="artwork">
+    <a href="https://www.example.com" target="_blank" style="text-decoration: none; color: inherit; display: block;">
+      <img src="許菟妘.jpg" alt="《窒。游》">
+      <div class="title">《窒。游》 中求自由<br>許苑芸揭社會枷鎖下的渴望</div>
+      <div class="quote">「外在的束縛與對自己的期許，就像緊緊捆綁著我們，<br>其實不是那麼難解開，而是自己不願輕易地放過自己。」</div>
+    </a>
+  </div>
+
+  <div class="artwork">
+    <a href="https://www.example.com" target="_blank" style="text-decoration: none; color: inherit;">
+      <img src="李濡妘.jpg" alt="李濡妘捕捉光影變化">
+      <div class="title">李濡妘捕捉光影變化<br>藉影子觸及心靈深處</div>
+      <div class="quote">「陰影裡的黑去除干擾後，是觸及靈魂深處的關鍵。」</div>
+    </a>
+    </div>
+    
+    <div class="artwork">
+      <a href="https://www.example.com" target="_blank" style="text-decoration: none; color: inherit;">
+        <img src="劉鳳翔.jpg" alt="油彩侵蝕出隨機紋理">
+        <div class="title">油彩侵蝕出隨機紋理<br>周鳳翔藉「痕跡」重現記憶碎片</div>
+        <div class="quote">「生命中充滿許多玻璃碎的記憶，總在不知不覺中影響著我們，<br>甚至在某一刻突然浮現腦海之中。」</div>
+      </a>
+    </div>
+ 
+</div>
+
+<div class="newsheader" id="newsheader2">
+  The Hermit<br>文字專題
+</div>
+
+<div class="gallery">
+  <div class="artwork">
+    <a href="https://www.example.com" target="_blank" style="text-decoration: none; color: inherit;">
+      <img src="助理員.jpg" alt="特教助理員">
+      <div class="title">被忽略的校園守護者：<br>特教學生助理人員的職場困境</div>
+      <div class="quote">「特教助理員要協助不同障礙別的小朋友，應該是專業的職業，<br>不該將助理員視為臨時人力。」</div>
+    </a>
+  </div>
+
+  <div class="artwork">
+    <a href="https://www.example.com" target="_blank" style="text-decoration: none; color: inherit;">
+      <img src="輪椅旅遊.jpg" alt="輪椅旅遊">
+      <div class="title">輪椅旅遊困境<br>無障礙景點如何落實無障礙？</div>
+      <div class="quote">「台灣許多景點都有無障礙設施或服務，但輪椅使用者仍會碰到阻礙。」</div>
+    </a>
+  </div>
+
+  <div class="artwork">
+    <a href="https://www.example.com" target="_blank" style="text-decoration: none; color: inherit;">
+      <img src="無障礙法規.jpg" alt="無障礙法規">
+      <div class="title">用不了的無障礙設施<br>法規與觀念如何邁向下一步？</div>
+      <div class="quote">「部分政府機關不是沒有在做，<br>只是它做出來的無障礙環境並不符合使用者的實際需求，<br>就會變成花了錢，結果沒有實際效用。」</div>
+    </a>
+  </div>
+
+</div>
+
+<div class="newsheader" id="newsheader3">
+  The Hermit<br>影音新聞
+</div>
+
+<div class="gallery">
+  <div class="artwork">
+    <a href="https://www.example.com" target="_blank" style="text-decoration: none; color: inherit;">
+      <img src="醫療.png" alt="醫療遊行">
+      <div class="title">遊行抗議地獄職場<br>醫事人員上街爭勞權</div>
+      <div class="quote">「醫療前線人員惡劣的職場環境，政府若無法改善，<br>留不住舊人，新人也不願進入職場，<br>惡性循環之下，危害的依舊是廣大民眾的健康。」</div>
+    </a>
+    </div>  
+  
+  <div class="artwork">
+    <a href="https://www.example.com" target="_blank" style="text-decoration: none; color: inherit;">
+      <img src="戲獅甲.png" alt="戲獅甲">
+      <div class="title">《戲獅甲》舞進巨蛋<br>結合藝陣演繹台灣歷史</div>
+      <div class="quote">「兩年一次的戲獅甲系列活動，<br>不但建立平台讓本土與國際團隊相互交流，<br>更首度融合台灣歷史與民俗藝陣，期盼打破對傳統廟會的不良印象，<br>讓民眾看見舞獅文化的力與美。」</div>
+    </a>
+  </div> 
+
+  <div class="artwork">
+    <a href="https://www.example.com" target="_blank" style="text-decoration: none; color: inherit;">
+      <img src="遊蕩動物.png" alt="遊蕩動物">
+      <div class="title">各校攻擊事件頻傳<br>遊蕩犬成校安隱憂</div>
+      <div class="quote">「遊蕩犬問題不僅造成校園安全隱憂，更可能危及自然生態，<br>如何在動物生存與學生權益間取得平衡，仍待政府與各界關注。」</div>
+    </a>
+  </div>
+</div>
+
+</body>
+</html>
