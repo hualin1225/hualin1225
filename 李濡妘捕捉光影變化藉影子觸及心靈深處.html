@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<title>李濡妘捕捉光影變化　藉影子觸及心靈深處</title>
+<style>
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+  margin: 0;
+  font-family: "Microsoft JhengHei", sans-serif;
+  background: linear-gradient(180deg, #e5d1fd 0%, 	#d0a1f1 80%);  /* 例：從粉紫到淡藍的柔和漸層 */
+  background-attachment: fixed;    /* 滾動時不跟隨滾動，增添視覺層次 */
+  padding-top: 60px;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.5); /* 白色半透明，透明度 0.5 */
+    z-index: -1; /* 在背景層 */
+  }
+
+  header {
+  background-color: #fdcaca;
+  padding: 10px 30px;
+  display: flex;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  width: 96%;
+  z-index: 1000;
+}
+
+  header .logo {
+  font-size: 35px;
+  margin-right: 60px; /* 加大右邊間距（原本是 auto） */
+}
+
+  nav {
+  display: flex;
+  align-items: center;
+}
+
+  .container {
+    max-width: 1000px;
+    margin: auto;
+    padding: 40px;
+    align-items: center;
+  }
+  .title-bar {
+    display: flex;
+    align-items: center;
+    background-color: #ffe2e1;
+    border-radius: 30px;
+    padding: 20px 30px;
+    max-width: 1000px;
+    margin: 40px auto;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);  /* ✅ 新增陰影 */
+  }
+  .title-icon {
+    font-size: 38px;
+    margin-right: 60px auto 40px;
+
+  }
+  .title-text {
+    font-weight: bold;
+    font-size: 38px;
+    color: #000;
+    margin-left:20px;
+
+  }
+
+  .section {
+  max-width: 1000px;
+  background-color: #fff2f2c3;
+  border-radius: 10px;
+  margin: 20px auto;        /* 同時確保水平方向也置中 */
+  padding: 30px;
+  text-align: left;       /* 讓文字與圖片都置中 */
+  font-size: 18px;
+  line-height: 2;
+}
+
+.section p {
+  margin-bottom: 25px;       /* 每個段落下方的距離變大，視覺更舒適 */
+}
+
+.image {
+  height: auto;
+  max-width: 100%;
+  border-radius: 10px;
+  margin: 0 auto 10px;  /* 上下外距，左右自動置中 */
+  display: block;
+}
+
+.hashtags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 50px;
+  margin-bottom: 100px;
+  align-items: center;
+  justify-content: center;  /* ✅ 新增：讓 hashtags 置中 */
+}
+
+  .hashtag {
+    background-color: #fafafad0;
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-size: 20px;
+  }
+
+  #backToTop {
+  position: fixed;       /* 固定在畫面右下角 */
+  bottom: 20px;
+  right: 30px;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #ffe0e0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  z-index: 9999;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  font-size: 30px;       /* 文字大小 */
+  transition: background-color 0.3s;  /* hover 效果 */
+}
+
+#backToTop:hover {
+  background-color: #ffc0cb;
+}
+
+</style>
+</head>
+<body>
+<header>
+        <a href="" target="_blank" style="text-decoration: none; color: inherit;">
+          <div class="logo">🎀</div>
+        </a>
+</header>
+
+<div id="backToTop" onclick="scrollToTop()">🩷</div>
+
+<div class="title-bar">
+    <div class="title-icon">🎨</div>
+    <div class="title-text">李濡妘捕捉光影變化　藉影子觸及心靈深處</div>
+  </div>
+
+  <div class="section">
+    <img src="https://unews.nccu.edu.tw/wp-content/uploads/2023/11/c0596f1b806b7aa6c88b57f901002520-1024x754.png" alt="《扮影》" class="image">
+    <p>陽光透進展場，在牆上形成獨特影子，與展覽概念相呼應，也是李濡妘選定此場地辦展的理由。　圖／李濡妘提供</p>
+  </div>
+
+  <div class="section">
+    <p>【記者王華琳台中報導】「陰影裡的黑去除干擾後，是觸及靈魂深處的關鍵。」國立臺中科技大學商業設計系碩士生李濡妘舉辦攝影個展《扮影》。透過記錄周遭易被忽略的影子，李濡妘以影像刻畫出影子與他之間的心靈羈絆，並讓觀眾以不同角度重新認識兩者的連結。展覽於6日起於Common+展出。</p>
+    <p>「發現自己其實更像影子，也渴望它所停留的地方。」李濡妘提到，陰影是他在追求光芒時能短暫休息的地方，也因為前段時間的創作瓶頸，讓他開始思考自己與影子間相互扮演的關係。談及選擇攝影進行創作的原因，李濡妘認為影像比文字更為隱晦且有敘事性。因此，在這次展覽中，他試著減少文字的使用，單純以攝影傳遞故事。與李濡妘亦師亦友的中科大商業設計系助理教授邱旭蓮說：「李濡妘是非常理性的，能理性地分析他的內心狀態，同時他的照片中也擁有拍攝當下的感性。」</p>
+  </div>
+
+  <div class="section">
+    <img src="https://unews.nccu.edu.tw/wp-content/uploads/2023/11/1d5f30631d830b0b33fec7b90a791c9f-1024x768.jpg" alt="〈甦醒〉" class="image">
+    <p>李濡妘在作品〈甦醒〉中，拍攝了房間牆面上的影子，也將自己的影子融入畫面當中。　圖／王華琳攝</p>
+  </div>
+
+  <div class="section">
+    <p>《房間》系列的創作源起，來自於李濡妘注意到自己房間裡的光影變化，作品之一的〈甦醒〉，更是他首次將自身影子展現在創作當中。他認為房間對於所有人而言，是一個能容忍個人邋遢、情緒失控的隱密場所，也是與自身獨享敏感時刻的城堡。因此，李濡妘歷經一番掙扎才決定展出此系列，他說：「我覺得被看見是需要勇氣的，而展覽很像是在練習被看見。」觀眾吳彥樺認為，房間所營造的平靜氛圍，讓人們對於室內光影有更細膩的觀察，「這個系列讓我有種是起點也是終點的感覺。」</p>
+    <p>《微物》系列作品分為前後兩部分，李濡妘在系列前半將物件與影子一同放入畫面，而後半部分則聚焦於影子本身，「我想只有影子的時候，或許能給觀者更遼闊的解讀空間。」在系列作品之一的〈暫停〉，李濡妘拍攝一個故障時鐘與它的影子。他提到，人們普遍認為攝影是捕捉每一秒變化的瞬間，而影子則像是空間中的時間標記，「可是在這張照片裡時鐘壞了，好像時間暫停，但影子又會隨時改變，那這個畫面就有點違背大家原先的想法。」</p>
+  </div>
+
+  <div class="section">
+    <img src="https://unews.nccu.edu.tw/wp-content/uploads/2023/11/d4d80682f883f5957062573506ebeae3-1024x747.png" alt="〈暫停〉" class="image">
+    <p>〈暫停〉畫面中物體與影子共同存在，李濡妘認為人們依舊習慣將視覺焦點放在物體上而非影子。　圖／王華琳攝</p>
+  </div>
+
+  <div class="section">
+    <p>在《情緒》系列作品中，李濡妘利用影子將情緒具象化，表達人們在解讀影子時，常將自身情感投射其中。他特別將此系列照片去除空間感，讓觀眾無法看出影子所處的空間。作品以平放陳列於展場中央的安排，則讓觀眾可於四周走動，以不同角度觀賞作品。其系列的作品之一〈刺痛〉，名稱源自於朋友對於照片的感受，也恰好印證了李濡妘拍攝當下的狀態，他說：「回頭去看這些混亂情況下所拍的照片時，才發現它們所呈現的拍攝狀態，是當下無法察覺。」</p>
+    <p>李濡妘透過展覽提供觀者重新認識影子的機會，讓他們再次觸碰內心深處，「每個人都可以用想像力去閱讀影子的影像，而那樣的想像力背後都有著自己的解讀。」他認為影子能觸及每個人靈魂深處中，難以對他人言說的心緒。同時，李濡妘也期望觀眾能改變對黑暗的負面印象，「我們一定有光也有影，這才是我們存在的意義。」</p>
+  </div>
+
+  <div class="section">
+    <img src="https://unews.nccu.edu.tw/wp-content/uploads/2023/11/dadd52f4e110ef1e0766818fecd3c7b1-1024x990.png" alt="〈刺痛〉" class="image">
+    <p>李濡妘將〈刺痛〉的空間感去除，讓觀眾對影子有更多的解讀，而影子的本體實際為百葉窗。　圖／王華琳攝</p>
+  </div>
+
+  <div class="section">
+    <img src="https://unews.nccu.edu.tw/wp-content/uploads/2023/11/256ca98d75fa432b138ee6e0ea1b349c-1024x768.png" alt="〈時間〉" class="image">
+    <p>李濡妘在同一角度多次按下快門，記錄不同時刻房間內的影子變化，創作出作品〈時間〉。　圖／王華琳攝</p>
+  </div>
+
+  <div class="hashtags">
+    <div class="hashtag">#扮影</div>
+    <div class="hashtag">#李濡妘</div>
+    <div class="hashtag">#攝影</div>
+    <div class="hashtag">#Common+</div>
+    <div class="hashtag">#影子</div>
+  </div>
+</div>
+<script>
+    function scrollToTop() {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'   // 平滑滾動
+      });
+    }
+    </script>
+</body>
+</html>
