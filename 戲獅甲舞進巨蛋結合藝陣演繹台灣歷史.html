@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<title>《戲獅甲》舞進巨蛋　結合藝陣演繹台灣歷史</title>
+<style>
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+  margin: 0;
+  font-family: "Microsoft JhengHei", sans-serif;
+  background: linear-gradient(135deg, #ffb5c7 0%, #e5b37d 100%);  /* 例：從粉紫到淡藍的柔和漸層 */
+  background-attachment: fixed;    /* 滾動時不跟隨滾動，增添視覺層次 */
+  padding-top: 60px;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.5); /* 白色半透明，透明度 0.5 */
+    z-index: -1; /* 在背景層 */
+  }
+
+  header {
+  background-color: #fdcaca;
+  padding: 10px 30px;
+  display: flex;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  width: 96%;
+  z-index: 1000;
+}
+
+  header .logo {
+  font-size: 35px;
+  margin-right: 60px; /* 加大右邊間距（原本是 auto） */
+}
+
+  nav {
+  display: flex;
+  align-items: center;
+}
+
+  .container {
+    max-width: 1000px;
+    margin: auto;
+    padding: 40px;
+    align-items: center;
+  }
+  .title-bar {
+    display: flex;
+    align-items: center;
+    background-color: #ffe2e1;
+    border-radius: 30px;
+    padding: 20px 30px;
+    max-width: 1000px;
+    margin: 40px auto;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);  /* ✅ 新增陰影 */
+  }
+  .title-icon {
+    font-size: 38px;
+    margin-right: 60px auto 40px;
+
+  }
+  .title-text {
+    font-weight: bold;
+    font-size: 38px;
+    color: #000;
+    margin-left:20px;
+
+  }
+
+  .section {
+  max-width: 1000px;
+  background-color: #fff2f2c3;
+  border-radius: 10px;
+  margin: 20px auto;        /* 同時確保水平方向也置中 */
+  padding: 30px;
+  text-align: left;       /* 讓文字與圖片都置中 */
+  font-size: 18px;
+  line-height: 2;
+}
+
+.section p {
+  margin-bottom: 25px;       /* 每個段落下方的距離變大，視覺更舒適 */
+}
+
+.image {
+  height: auto;
+  max-width: 100%;
+  border-radius: 10px;
+  margin: 0 auto 10px;  /* 上下外距，左右自動置中 */
+  display: block;
+}
+
+.video-container {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%;  /* 16:9比例 */
+  height: 0;
+  overflow: hidden;
+  border-radius: 10px;      /* ✅ 和 section 風格一致 */
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2); /* ✅ 陰影效果 */
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;      /* ✅ 邊緣圓角 */
+}
+
+.hashtags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 50px;
+  margin-bottom: 100px;
+  align-items: center;
+  justify-content: center;  /* ✅ 新增：讓 hashtags 置中 */
+}
+
+  .hashtag {
+    background-color: #fafafad0;
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-size: 20px;
+  }
+
+  #backToTop {
+  position: fixed;       /* 固定在畫面右下角 */
+  bottom: 20px;
+  right: 30px;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #ffe0e0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  z-index: 9999;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  font-size: 30px;       /* 文字大小 */
+  transition: background-color 0.3s;  /* hover 效果 */
+}
+
+#backToTop:hover {
+  background-color: #ffc0cb;
+}
+
+</style>
+</head>
+<body>
+<header>
+        <a href="https://hualin1225.github.io/index.html" target="_blank" style="text-decoration: none; color: inherit;">
+          <div class="logo">🎀</div>
+        </a>
+</header>
+
+<div id="backToTop" onclick="scrollToTop()">🩷</div>
+
+<div class="title-bar">
+    <div class="title-icon">📺</div>
+    <div class="title-text">《戲獅甲》舞進巨蛋　結合藝陣演繹台灣歷史</div>
+  </div>
+
+  <div class="section">
+    <p>【記者黎昕俞、李雨羲、王華琳高雄採訪報導】鑼鼓喧天，響徹場館，舞獅靈活地跳躍在高樁上，以採花、翻滾等動作生動展現。</p>
+    <p>2023高雄戲獅甲睽違四年再度回歸，18、19日在高雄巨蛋舉行。開幕當天，首度結合「劇本」 形式，集結超過30組技藝團隊，將台灣歷史融入民俗藝陣演出，民眾驚嘆聲接連不斷。來台交換的觀眾Amol Bhingarde欣喜地說道：「我還是不太懂中文，所以有些地方有點難跟上。但透過演出了解台灣的歷史真的很棒，我喜歡他們利用台灣歷史上不同時期的方式，以及他們如何透過舞蹈和歌唱展示這一切。」</p>
+    <p>劇本結合原住民舞蹈、客家八音等民俗技藝，跳脫以傳統節慶為主的表演形式，呈現台灣過去多元族群發展。國立臺南大學民俗隊長陳柏愷說明，「這次表演為了想要倭寇侵擾的感覺，我們搭配了比較震撼的音樂去演出。」陳柏愷進一步解釋，相較於過去只使用鼓點，南大民俗隊首次嘗試結合音樂進行表演，在練習過程中，更需要不斷學習辨識節奏。</p>
+    <p>銅鈸聲響，萬眾矚目的獅王大賽正式登場。戲獅甲作為國際三大舞獅競賽之一，今年邀請來自新加坡、馬來西亞等各國好手同台競技。來自香港的潤福堂國術龍獅總會，則以黑紅相間的獅頭作為本次亮點，獅頭手關志堅提及，「對於這次我們就選用了一隻比較特別的獅頭，那它的代表是關公的獅頭，平常我們都是用黑白色的張飛。那這次來台灣用了新的獅頭，整個就紅色配著黑色去表達。」</p>
+    <p>來自不同國家的隊伍，不僅在獅王大賽中相互切磋技藝，同時也藉此展現各地舞獅風情。新加坡藝威體育會獅尾手卓偉樂分析，台灣與新加坡獅型和動作的差異，「比如說獅型還有動作，因為我們是舞佛山獅，其他台灣隊伍都是舞鶴山獅。佛山獅是表達比較凶猛的，然後鶴山是比較溫柔一點的。」</p>
+    <p>除了較勁舞獅功夫外，各團隊更加入釣魚、澆水等日常橋段，拉近民眾與民俗技藝的距離。國立臺北市立大學獅尾手楊鎧謙解釋，「我們比較不一樣的是啦啦隊和打棒球，比較特色的應該是我們隊員穿啦啦隊員的衣服打樂器，跟以往可能會不一樣。」</p>
+    <p>兩年一次的戲獅甲系列活動，不但建立平台讓本土與國際團隊相互交流，更首度融合台灣歷史與民俗藝陣，期盼打破對傳統廟會的不良印象，讓民眾看見舞獅文化的力與美。</p>
+  </div>
+
+  <div class="section">
+    <div class="video-container">
+      <iframe src="https://www.youtube.com/embed/eosjSnrXj-U?si=9uUXZKt0dm0XDn4O"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen></iframe>
+    </div>
+  </div>
+
+  <div class="hashtags">
+    <div class="hashtag">#戲獅甲</div>
+    <div class="hashtag">#舞獅</div>
+    <div class="hashtag">#藝陣</div>
+    <div class="hashtag">#高雄巨蛋</div>
+    <div class="hashtag">#台灣歷史</div>
+    <div class="hashtag">#傳統文化</div>
+  </div>
+</div>
+<script>
+    function scrollToTop() {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'   // 平滑滾動
+      });
+    }
+    </script>
+</body>
+</html>
