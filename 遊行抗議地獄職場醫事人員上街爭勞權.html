@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<title>遊行抗議地獄職場　醫事人員上街爭勞權</title>
+<style>
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+  margin: 0;
+  font-family: "Microsoft JhengHei", sans-serif;
+  background: linear-gradient(135deg, #fbc2eb 0%, #88dcc1 100%);  /* 例：從粉紫到淡藍的柔和漸層 */
+  background-attachment: fixed;    /* 滾動時不跟隨滾動，增添視覺層次 */
+  padding-top: 60px;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.5); /* 白色半透明，透明度 0.5 */
+    z-index: -1; /* 在背景層 */
+  }
+
+  header {
+  background-color: #fdcaca;
+  padding: 10px 30px;
+  display: flex;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  width: 96%;
+  z-index: 1000;
+}
+
+  header .logo {
+  font-size: 35px;
+  margin-right: 60px; /* 加大右邊間距（原本是 auto） */
+}
+
+  nav {
+  display: flex;
+  align-items: center;
+}
+
+  .container {
+    max-width: 1000px;
+    margin: auto;
+    padding: 40px;
+    align-items: center;
+  }
+  .title-bar {
+    display: flex;
+    align-items: center;
+    background-color: #ffe2e1;
+    border-radius: 30px;
+    padding: 20px 30px;
+    max-width: 1000px;
+    margin: 40px auto;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);  /* ✅ 新增陰影 */
+  }
+  .title-icon {
+    font-size: 38px;
+    margin-right: 60px auto 40px;
+
+  }
+  .title-text {
+    font-weight: bold;
+    font-size: 38px;
+    color: #000;
+    margin-left:20px;
+
+  }
+
+  .section {
+  max-width: 1000px;
+  background-color: #fff2f2c3;
+  border-radius: 10px;
+  margin: 20px auto;        /* 同時確保水平方向也置中 */
+  padding: 30px;
+  text-align: left;       /* 讓文字與圖片都置中 */
+  font-size: 18px;
+  line-height: 2;
+}
+
+.section p {
+  margin-bottom: 25px;       /* 每個段落下方的距離變大，視覺更舒適 */
+}
+
+.image {
+  height: auto;
+  max-width: 100%;
+  border-radius: 10px;
+  margin: 0 auto 10px;  /* 上下外距，左右自動置中 */
+  display: block;
+}
+
+.video-container {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%;  /* 16:9比例 */
+  height: 0;
+  overflow: hidden;
+  border-radius: 10px;      /* ✅ 和 section 風格一致 */
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2); /* ✅ 陰影效果 */
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;      /* ✅ 邊緣圓角 */
+}
+
+.hashtags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 50px;
+  margin-bottom: 100px;
+  align-items: center;
+  justify-content: center;  /* ✅ 新增：讓 hashtags 置中 */
+}
+
+  .hashtag {
+    background-color: #fafafad0;
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-size: 20px;
+  }
+
+  #backToTop {
+  position: fixed;       /* 固定在畫面右下角 */
+  bottom: 20px;
+  right: 30px;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #ffe0e0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  z-index: 9999;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  font-size: 30px;       /* 文字大小 */
+  transition: background-color 0.3s;  /* hover 效果 */
+}
+
+#backToTop:hover {
+  background-color: #ffc0cb;
+}
+
+</style>
+</head>
+<body>
+<header>
+        <a href=https://hualin1225.github.io/index.html" target="_blank" style="text-decoration: none; color: inherit;">
+          <div class="logo">🎀</div>
+        </a>
+</header>
+
+<div id="backToTop" onclick="scrollToTop()">🩷</div>
+
+<div class="title-bar">
+    <div class="title-icon">📺</div>
+    <div class="title-text">遊行抗議地獄職場　醫事人員上街爭勞權</div>
+  </div>
+
+  <div class="section">
+    <p>【記者黎昕俞、王華琳、李雨羲台北採訪報導】民眾變裝成不同角色走上街頭，高喊心中的不滿。眾多醫療人員於22日集結於立法院前，舉辦醫療勞權大遊行。活動結合萬聖節，將高壓的工作環境比喻為地獄，控訴現今的醫療亂象，爭取勞工權益。台灣醫療工會聯合會副理事長郭蕢瑩表示：「如果是像一般的遊行方式，我們覺得有些人他是不敢出來的，所以希望用比較輕鬆、有趣的方式，鼓勵大家一起站出來。」</p>
+    <p>護理師、醫檢師、放射師等第一線醫事人員，於此次遊行提出四大訴求。希望政府正視醫療人員過勞的問題，明定三班護病比與制定合理工作量，同時期望確保職場安全，改革輪班與跨科支援亂象。更呼籲政府重視醫療專業，提供執業保障與合理薪資待遇，最後要求公部門依法履行健保制度，並在會議中納入醫療勞工代表。新北市職能治療師公會理事周佳欣說：「《職能治療師法》已經10幾年沒有修法了，但是修法沒有成功，我們很多事情不能做。其實我們要服務很多的民眾和個案，可是卻會變成是違法的行為，這就會影響到我們的權益。」</p>
+    <p>自疫情以後，醫療體系因過勞、低薪等問題未能改善，加上成效不佳的改革政策，使職場環境持續惡化，讓基層人員離職率再創高峰。臺大企業工會理事長楊心慧補充：「護理人員的薪水幾乎是沒有長進的，近30年來甚至是持平的狀況。而我們也會遇到很多職場霸凌，或是醫療環境上跟病人有一些醫療糾紛。那其實整體來說實習生都看的出來，我們的工作CP值真的很低，並不是新進人員會想要選擇的行業。」</p>
+    <p>低薪、工時長的職場現況，除了造成醫護人才大量流失，更間接影響學生就讀相關科系的意願。長庚大學物理治療學系學生劉柏均提到：「現在對醫護有興趣的人，反而不敢去做，因為看到這麼慘的待遇跟工作環境，反而就卻步了。」</p>
+    <p>醫療前線人員惡劣的職場環境，政府若無法改善，留不住舊人，新人也不願進入職場，惡性循環之下，危害的依舊是廣大民眾的健康。</p>
+  </div>
+
+  <div class="section">
+    <div class="video-container">
+      <iframe src="https://www.youtube.com/embed/kVb2XG6UqSw?si=OVrb8BR1U-95NSqh"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen></iframe>
+    </div>
+  </div>
+
+  <div class="hashtags">
+    <div class="hashtag">#醫療</div>
+    <div class="hashtag">#醫事人員</div>
+    <div class="hashtag">#遊行</div>
+    <div class="hashtag">#抗議</div>
+    <div class="hashtag">#勞權</div>
+    <div class="hashtag">#職場環境</div>
+    <div class="hashtag">#萬聖節</div>
+  </div>
+</div>
+<script>
+    function scrollToTop() {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'   // 平滑滾動
+      });
+    }
+    </script>
+</body>
+</html>
