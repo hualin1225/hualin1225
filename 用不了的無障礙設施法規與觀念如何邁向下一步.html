@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<title>用不了的無障礙設施　法規與觀念如何邁向下一步？</title>
+<style>
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    margin: 0;
+    font-family: "Microsoft JhengHei", sans-serif;
+    background-color: #ffcdde;
+    padding-top: 60px;
+  }
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.5); /* 白色半透明，透明度 0.5 */
+    z-index: -1; /* 在背景層 */
+  }
+  
+  header {
+  background-color: #fdcaca;
+  padding: 10px 30px;
+  display: flex;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  width: 96%;
+  z-index: 1000;
+}
+
+  header .logo {
+  font-size: 35px;
+  margin-right: 60px; /* 加大右邊間距（原本是 auto） */
+}
+
+  nav {
+  display: flex;
+  align-items: center;
+}
+
+  .container {
+    max-width: 1000px;
+    margin: auto;
+    padding: 40px;
+    align-items: center;
+  }
+  .title-bar {
+    display: flex;
+    align-items: center;
+    background-color: #ffe2e1;
+    border-radius: 30px;
+    padding: 20px 30px;
+    max-width: 1000px;
+    margin: 40px auto;
+  }
+  .title-icon {
+    font-size: 38px;
+    margin-right: 60px auto 40px;
+
+  }
+  .title-text {
+    font-weight: bold;
+    font-size: 38px;
+    color: #000;
+    margin-left:20px;
+
+  }
+
+  .section {
+  max-width: 1000px;
+  background-color: #fff2f2c3;
+  border-radius: 10px;
+  margin: 20px auto;
+  padding: 30px;
+  text-align: left;
+  font-size: 18px;
+  line-height: 2;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);  /* ✅ 新增陰影 */
+}
+
+.section p {
+  margin-bottom: 25px;       /* 每個段落下方的距離變大，視覺更舒適 */
+}
+
+.image {
+  height: auto;
+  max-width: 100%;
+  border-radius: 10px;
+  margin: 0 auto 10px;  /* 上下外距，左右自動置中 */
+  display: block;
+}
+
+.subtitle {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* 讓文字與線條一塊置中 */
+  font-size: 30px;
+  margin-top:80px;
+  font-weight: bold;
+}
+.subtitle::before {
+  content: '';
+  display: inline-block;
+  width: 10px;
+  height: 24px;
+  background-color: #f1597f;
+  margin-right: 10px;   /* 線條與文字距離 */
+}
+
+.hashtags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 50px;
+  margin-bottom: 100px;
+  align-items: center;
+  justify-content: center;  /* ✅ 新增：讓 hashtags 置中 */
+}
+
+  .hashtag {
+    background-color: #fafafad0;
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-size: 20px;
+  }
+
+  #backToTop {
+  position: fixed;       /* 固定在畫面右下角 */
+  bottom: 20px;
+  right: 30px;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #ffe0e0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  z-index: 9999;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  font-size: 30px;       /* 文字大小 */
+  transition: background-color 0.3s;  /* hover 效果 */
+}
+
+#backToTop:hover {
+  background-color: #ffc0cb;
+}
+
+</style>
+</head>
+<body>
+<header>
+        <a href="" target="_blank" style="text-decoration: none; color: inherit;">
+          <div class="logo">🎀</div>
+        </a>
+</header>
+
+<div id="backToTop" onclick="scrollToTop()">🩷</div>
+
+<div class="title-bar">
+    <div class="title-icon">🗂️</div>
+    <div class="title-text">輪椅旅遊困境　無障礙景點如何落實無障礙？</div>
+  </div>
+
+  <div class="section">
+    <p>【專題記者王華琳、黎昕俞、張雅媜、邱昭華、李雨羲綜合報導】「他們總是認為『我們不會有人用到這個（無障礙設備）』。」老編車侖在雲林（化名）無奈說道。罹患漸凍症的老編車侖在雲林，從原先只需以拐杖輔助，到後來必須依靠電動輪椅行動，坐上輪椅的這三年來，他才深深感受到輪椅使用者面臨到的不便。</p>
+    <p>老編車侖在雲林每每出門前都會規劃好行程、查明所有資料，卻總是因為「被拒絕」而打亂計畫。「他們明明有低底盤的公車，也有側面式升降板，但我還是被拒絕，原因是司機覺得太麻煩。」他提到自己在雲林的這三年，被公車司機拒載的經驗不計其數，唯一一次成功搭上公車，居然還是與司機爭執十幾分鐘才換來的，搭乘途中更是受盡冷嘲熱諷，讓他深感心寒，最後再也不願繼續嘗試搭公車，寧可選擇其他較不方便的交通方式。</p>
+    <p>這樣「有設施卻無法使用」的經驗不只出現在交通上，連無障礙廁所、無障礙客房也經常出現被挪作他用的現象。「好幾次找到無障礙廁所，打開門卻看見了滿滿的掃除用具，根本無法如廁。」老編車侖在雲林說道。</p>
+  </div>
+
+  <div class="section">
+    <img src="https://unews.nccu.edu.tw/wp-content/uploads/2024/05/c81e728d9d4c2f636f067f89cc14862c-858x1024.png" alt="公車上的無障礙設施需經由受過訓練的司機協助使用" class="image">
+    <p>輪椅使用者上下公車時需要司機協助放下斜坡板，搭乘途中也需固定安全帶，操作流程需要業者提前訓練。　圖／王華琳攝</p>
+  </div>
+
+  <div class="subtitle">
+    看得到卻用不到　無障礙設施落實與引導待加強
+  </div>
+
+  <div class="section">
+    <p>輪椅使用者無法直接使用無障礙設施的情況，也時常發生在公園或百貨公司裡的無障礙廁所。臺灣身心障礙者人權監督聯盟理事長、同為輪椅使用者的張學恒便舉例，許多加油站或派出所會把無障礙廁所鎖起來，使得身障人士無法使用。他說：「雖然是避免被佔用所以才鎖住，但是卻造成我們臨時要使用時很不方便。」輪椅使用者小恩（化名）則建議可以透過定期巡邏或者在廁所外面裝設監視器來改善。</p>
+  </div>
+
+  <div class="section">
+    <img src="https://unews.nccu.edu.tw/wp-content/uploads/2024/05/eccbc87e4b5ce2fe28308fd9f2a7baf3-1024x680.png" alt="隨著規範的修正無障礙廁所的型態也日漸多元" class="image">
+    <p>部份無障礙廁所為符合其它法規與需求，在內部增設兒童小便斗、洗面盆等設施，並將名稱改為「多功能廁所」。　圖／邱昭華攝</p>
+  </div>
+
+  <div class="section">
+    <p>社團法人台灣身心障礙兒童權利促進會理事長周淑菁也表示，自己曾帶坐輪椅的女兒逛百貨公司，卻遇到無障礙廁所被鎖上。他說：「因為它是電動門，我敲門也沒有人回應，不知道裡面到底有沒有人，所以我們又在外面等了半個小時。」若向服務臺反應，一來一往需耗費許多時間，許多人便因此作罷，尋找其他廁所。此外，他也建議如親子廁所等多功能廁所應與無障礙廁所區別開來。他認為對於身障人士來說，廁所的選擇只有一種，倘若在無障礙廁所內增設兒童馬桶，「對我來說唯一的選擇，卻被瓜分或佔用。」</p>
+    <p>輪椅使用者劉宏彬更以台灣隨處可見的便利商店為例，有些店家雖有購買昂貴的無障礙輔具，然而卻在上面貼布條、放雜物，輪椅使用者根本無法使用。「台灣的無障礙設計是符合規範但未落實。」劉宏彬說道。</p>
+  </div>
+
+  <div class="section">
+    <img src="https://unews.nccu.edu.tw/wp-content/uploads/2024/05/c4ca4238a0b923820dcc509a6f75849b-1024x721.png" alt="無障礙設十時常因閒置或是堆放雜物而遭無法使用" class="image">
+    <p>有些建築的斜坡與升降機會被店家封閉或堆放雜物占用，導致身障人士無法使用。　圖／李雨羲攝 </p>
+  </div>
+
+  <div class="section">
+    <p>現今許多場所的無障礙設施，也面臨資訊不足、無人引導或不當管理等狀況，導致輪椅使用者出遊時，常常無法使用。然而根據《中華民國憲法增修條文》第10條規定，國家對於身心障礙者之無障礙環境之建構應予保障，並以扶助他們自立發展為目的。</p>
+    <p>輪椅導遊黃欣儀坦言觀光署推薦的無障礙旅遊有行程資訊不足的問題，單純只列出景點名稱，卻沒有詳細指出景點內部設施及適用範圍與路線，輪椅使用者可能需要額外查詢資料，耗費許多時間。此外，管理單位對於無障礙設施的認識不足，也會造成輪椅使用者難以獲取足夠資訊。「我常常問工作人員相關資訊，卻一問三不知，因為實際上他們都是行動方便者，他沒有實際走過也不會去注意哪邊有樓梯、哪邊輪椅不行走。」黃欣儀說道。</p>
+    <p>此外，部分景點設有無障礙設施，但管理處並未明確引導，甚至勸離身障人士。2021年，由臺北市定古蹟改建成的國家攝影文化中心開放參觀，並於官網標示設有無障礙坡道，劉宏彬興高采烈的前往參觀，卻被保全告知只能走階梯入館，「他說坡道與車道並排、很危險，但我自己去看，發現車道寬敞平坦，而且設施做得很好，進去中庭廣場還有很漂亮的無障礙電梯，非常方便，他們這麼說就只是覺得多一事不如少一事。」所幸經過反應後，劉宏彬表示現今國家攝影文化中心已經訓練員工，主動引導輪椅使用者入園參觀。</p>
+  </div>
+
+  <div class="subtitle">
+    法規制度恐未到位　無障礙落實難管理
+  </div>
+
+  <div class="section">
+    <p>「我國目前有許多與無障礙設施相關的法規，但規範內容不夠細緻。」財團法人台北市行無礙資源推廣協會總幹事許朝富說。依據《身心障礙者權益保障法》公共建築應設置能供各類身心障礙者使用的設備，且該規定亦要求未符合標準的既有建築依法進行改善，若未提出改善計畫並於限期內改善，主管機關可依法開罰直至改善完成。 </p>
+    <p>不過該法第57條第三項也通融因古蹟或建築構造等不可抗力因素，而難以完善無障礙設施的建築物，可由負責人提出替代的改善方案。許朝富認為這可能提供了不完全落實無障礙設施的空間。他表示，有些建築興建當下不了解各樓層用處，因此未考慮無障礙設施的設置需求，等到蓋完交屋後，為了從事商業用途而被要求符合無障礙規章時，才發現建築結構無法配合，「商家說地面樑柱突起沒辦法做斜坡，只能放置移動式斜坡，這明明就是不對的，但也只能妥協。」 </p>
+    <p>此外，《建築技術規則建築設計施工編》也詳細定義需要符合無障礙設施要求的公共建築，並依照各類用途將其羅列出來。許朝富認為目前雖已條列許多場所，但仍有缺漏，「像辦公大樓就不算需有無障礙設施的公共建築，但身障者也需要上班。」他認為，多數生活場域都應該以無障礙為目標，立法時，若改列出因特定原因而不需要無障礙設施的地點，或許可以避免此種情況發生。</p>
+    <p>台灣設定無障礙規範時，也常常忽略了使用者在該場所的需求。許朝富以泳池舉例：「基本上，美國針對游泳池就會有與水上活動相關的規範，絕對不會只要求做廁所，然後就不管你如何使用游泳池。」提及國家公園時，他也補充，國家公園的無障礙規範主要是針對遊客中心，而未考量步道的設計，「但你去國家公園，就是要去走步道呀！」他認為，關鍵是需要從使用者角度思考。</p>
+    <p>雖在《身心障礙者權益保障法》第八章中有明訂未符合條文規定會受到的罰則，但因其屬「不告不理」，故仍需身障者主動檢舉或申訴才會啟動懲處機制。律師李秉宏表示，制度設計上期盼可達到「恩威並施」，若設施未限期改善，需求者可以請求損害賠償、行政機關依法開罰。同時，政府也可考慮採取免稅或補助等鼓勵措施，以提供誘因。</p>
+    <p>目前台灣較少法規明文規範設備維護及人員培訓等管理方式。根據《大眾運輸工具無障礙設施設置辦法》第19條，大眾運輸業者應每年辦理服務身心障礙者、操作輔具及安全訓練。許朝富說明，有許多無障礙輔具或設施需要學習專業技術才能操作，但目前具備此能力的人卻少之又少，有些受過訓練的人員也早已離開原職位。他認為：「一年只辦理一次人員訓練的話，效果一定不會好。」因此相關單位應建立一套長期的檢討制度，並納入更多的案例討論，以改善人員訓練不足的現況。</p>
+    <p>社團法人台北市新活力自立生活聯盟自立生活主任Yukih.Pupuy對此表示，現今的機制在運作上，管理單位與執行現場的溝通不足，並存在資訊不對等的問題，「這導致很多壓力都集中於第一線人員。」實際上，部分工作人員非常願意提供協助，但他們可能不擅操作，甚至也面臨來自民眾及時間的壓力。因此他認為，不是只有特定工作人員需要會操作或協助使用無障礙設施，而是所有人員都應該具備這樣的能力，「就像語言一樣如果每個人都會講中文，那其實我們就會很順暢，如果每個人都會的話，就能讓無障礙更加生活化。」</p>
+  </div>
+
+  <div class="subtitle">
+    身障團體盼設專法與專責單位　保障權益從「心」開始
+  </div>
+
+  <div class="section">
+    <p>當今台灣的行政體系下，相同類別的無障礙設施可能由不同行政單位管轄。Yukih.Pupuy說：「同樣是人行道，可能有的歸工程處管、有的歸公務局管。」建築師王武烈則指出：「無障礙沒有統一的管理單位，各地政府可能就會不完全落實。」近期身心障礙者權益保障法系列公聽會中，身障團體再次提出「設立專法、專責單位」的訴求，期盼政府成立專責單位，統一執行整體性的監督與規劃。Yukih.Pupuy說道：「就像人家聽到家暴就會打113 ，或是人家遇到搶劫就直接找警察，那為什麼不能當我的無障礙權益受損時，我就可以直接找某個特定單位。」</p>
+    <p>「部分政府機關不是沒有在做，只是它做出來的無障礙環境並不符合使用者的實際需求，就會變成花了錢，結果沒有實際效用。」李秉宏遺憾的說道。此外，他也指出許多問題發生時，設施的主管機關不明確，使得需求者申訴無門，甚至還有推卸責任的狀況。許朝富表示，「專責單位」不僅能改善現今使用者權益受損時須四處陳情的狀況，也能整合各部會無障礙相關專業人員，降低各部門行政上的負擔。</p>
+  </div>
+
+  <div class="section">
+    <img src="https://unews.nccu.edu.tw/wp-content/uploads/2024/05/a87ff679a2f3e71d9181a67b7542122c-1024x768.jpg" alt="部分無障礙廁所會因管理方便而遭到上鎖" class="image">
+    <p>部份無障礙廁所為避免有心人士占用，會上鎖拒絕開放，使得設施被荒置。　圖／王華琳攝</p>
+  </div>
+
+  <div class="section">
+    <p>現在無障礙事項散於各中央或是地方主管機關，有一點各做各的。」李秉宏坦言，法規制度會因政府單位的不同而有所差異，造成政策規範上缺乏整體性的思考。因此他認為，設立專法可釐清受規範的對象，同時考量各種需求，打造更加完善的無障礙環境，使更多使用者能從中受益。</p>
+    <p>社團法人台灣八福福祉協會秘書長翁玉鈴也說：「即便有法律規範，但服務人員還是會受個人心態及觀念的影響。」隨著高齡化社會來臨，許朝富希望大眾翻轉對於身心障礙人士的態度，「台灣還是很常用慈善的觀點去幫忙身心障礙人士，他們會覺得很有愛心，但事實上這是憲法保障的基本權益，跟愛心沒有關係。」張學恒也提及，一般大眾認為身心障礙者需要被可憐、被幫忙，「但我們身心障礙者是希望能夠自立自主，有自己的生活權益。 」他認為，既然台灣已經響應《身心障礙者權利公約》（The Convention on the Rights of Persons with Disabilities，CRPD），就應該全面遵守、落實公約精神，打造友善環境，讓身心障礙者擁有無礙的生活。</p>
+  </div>
+
+  <div class="hashtags">
+    <div class="hashtag">#無障礙旅遊</div>
+    <div class="hashtag">#無障礙設施</div>
+    <div class="hashtag">#人員管理問題</div>
+    <div class="hashtag">#無障礙</div>
+    <div class="hashtag">#無障礙法規</div>
+    <div class="hashtag">#CRPD</div>
+  </div>
+
+</div>
+<script>
+    function scrollToTop() {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'   // 平滑滾動
+      });
+    }
+    </script>
+</body>
+</html>
