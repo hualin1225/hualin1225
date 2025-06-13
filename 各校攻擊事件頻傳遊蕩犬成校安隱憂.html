@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<title>各校攻擊事件頻傳　遊蕩犬成校安隱憂</title>
+<style>
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+  margin: 0;
+  font-family: "Microsoft JhengHei", sans-serif;
+  background: linear-gradient(100deg, #f6bdc7 0%, #d1c971 100%);  /* 例：從粉紫到淡藍的柔和漸層 */
+  background-attachment: fixed;    /* 滾動時不跟隨滾動，增添視覺層次 */
+  padding-top: 60px;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.5); /* 白色半透明，透明度 0.5 */
+    z-index: -1; /* 在背景層 */
+  }
+
+  header {
+  background-color: #fdcaca;
+  padding: 10px 30px;
+  display: flex;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  width: 96%;
+  z-index: 1000;
+}
+
+  header .logo {
+  font-size: 35px;
+  margin-right: 60px; /* 加大右邊間距（原本是 auto） */
+}
+
+  nav {
+  display: flex;
+  align-items: center;
+}
+
+  .container {
+    max-width: 1000px;
+    margin: auto;
+    padding: 40px;
+    align-items: center;
+  }
+  .title-bar {
+    display: flex;
+    align-items: center;
+    background-color: #ffe2e1;
+    border-radius: 30px;
+    padding: 20px 30px;
+    max-width: 1000px;
+    margin: 40px auto;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);  /* ✅ 新增陰影 */
+  }
+  .title-icon {
+    font-size: 38px;
+    margin-right: 60px auto 40px;
+
+  }
+  .title-text {
+    font-weight: bold;
+    font-size: 38px;
+    color: #000;
+    margin-left:20px;
+
+  }
+
+  .section {
+  max-width: 1000px;
+  background-color: #fff2f2c3;
+  border-radius: 10px;
+  margin: 20px auto;        /* 同時確保水平方向也置中 */
+  padding: 30px;
+  text-align: left;       /* 讓文字與圖片都置中 */
+  font-size: 18px;
+  line-height: 2;
+}
+
+.section p {
+  margin-bottom: 25px;       /* 每個段落下方的距離變大，視覺更舒適 */
+}
+
+.image {
+  height: auto;
+  max-width: 100%;
+  border-radius: 10px;
+  margin: 0 auto 10px;  /* 上下外距，左右自動置中 */
+  display: block;
+}
+
+.video-container {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%;  /* 16:9比例 */
+  height: 0;
+  overflow: hidden;
+  border-radius: 10px;      /* ✅ 和 section 風格一致 */
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2); /* ✅ 陰影效果 */
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;      /* ✅ 邊緣圓角 */
+}
+
+.hashtags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 50px;
+  margin-bottom: 100px;
+  align-items: center;
+  justify-content: center;  /* ✅ 新增：讓 hashtags 置中 */
+}
+
+  .hashtag {
+    background-color: #fafafad0;
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-size: 20px;
+  }
+
+  #backToTop {
+  position: fixed;       /* 固定在畫面右下角 */
+  bottom: 20px;
+  right: 30px;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #ffe0e0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  z-index: 9999;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  font-size: 30px;       /* 文字大小 */
+  transition: background-color 0.3s;  /* hover 效果 */
+}
+
+#backToTop:hover {
+  background-color: #ffc0cb;
+}
+
+</style>
+</head>
+<body>
+<header>
+        <a href="https://hualin1225.github.io/index.html" target="_blank" style="text-decoration: none; color: inherit;">
+          <div class="logo">🎀</div>
+        </a>
+</header>
+
+<div id="backToTop" onclick="scrollToTop()">🩷</div>
+
+<div class="title-bar">
+    <div class="title-icon">📺</div>
+    <div class="title-text">各校攻擊事件頻傳　遊蕩犬成校安隱憂</div>
+  </div>
+
+  <div class="section">
+    <p>【李雨羲、鄭浩恩、王華琳報導】許多大學都有友好的校貓校狗。近幾年卻頻繁傳出校園遊蕩犬攻擊事件，其中政治大學更是每年都有學生遭到咬傷。</p>
+    <p>受攻擊政治大學學生潘若萱說：「（當時）走上去的時候，發現就是那邊有1個紙箱皮在那，然後我想說這是什麼，就往前踏一步。結果就是一群野狗，大概有五六隻吧，他們就直接是往我撲過來，它們是直接把我從樓梯最上層重摔到地上。」另一名受攻擊的政大學生王思驊則表示，從那時候我就再也不敢走接近事發地，即便離上課的地方比較近，但還是會從正門繞路，「畢竟我也不知道說會不會我哪一天走了，然後狗又跑出來。」</p>
+    <p>今年初台大、政大、成大等六校學生會發起連署，呼籲相關部門檢討，校園遊蕩動物的問題。而在近期的協商會議中，針對各級學校犬貓管理注意事項的應對措施進行修正。政大學生會副會長鄭中誠說道：「整合所有的訴求其實最重要的原因是，當學校不管的時候，我們的大學自治、中央或是地方政府，他其實也很難插手來管校地怎麼處理，就會變成一個大家都不管的狀態。」他同時也提及另一執行重點就是資源。若大學在領養或是處理遊蕩犬問題上有需求的話，將有關教育部的資源請領。</p>
+    <p>學生代表同時也呼籲政府單位應重視由遊蕩犬問題，並提出以TNSA取代TNR，使用收容、送養等方式取代回放，解決原先造成的負面影響。狗場負責人卓媽媽說：「我可以講說學校可以有狗，可是當然一些條件也是必須的。」學生的安全第一，可我們也要教育所有的學生善待動物，「只要說他不是有攻擊性的，我覺得有何不可。」卓媽媽說。</p>
+    <p>成大動物志工隊副隊長則表示：「運行的方式有好處，就是收容、的犬隻可以得到（照顧），我們會進行認養活動，所以它可能會找到新的家庭，有更好好的生活。TNR的部分，主要是針對不習慣中途環境，然後行為也沒有追吠問題的狗，我們會進行投放，若情況穩定我們就會繼續讓它待在校園裡面。」</p>
+    <p>除了較勁舞獅功夫外，各團隊更加入釣魚、澆水等日常橋段，拉近民眾與民俗技藝的距離。國立臺北市立大學獅尾手楊鎧謙解釋，「我們比較不一樣的是啦啦隊和打棒球，比較特色的應該是我們隊員穿啦啦隊員的衣服打樂器，跟以往可能會不一樣。」</p>
+    <p>校園遊蕩犬的攻擊問題不僅造成安全隱憂，更可能為危害其他生物，如何在動物生存與學生權益之間取得平衡，仍待政府與社會各界更加關注。</p>
+  </div>
+
+  <div class="section">
+    <div class="video-container">
+      <iframe src="https://www.youtube.com/embed/GWIUnhyNmcQ?si=THkOhggQyinEzLeJ"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen></iframe>
+    </div>
+  </div>
+
+  <div class="hashtags">
+    <div class="hashtag">#遊蕩犬</div>
+    <div class="hashtag">#校園安全</div>
+    <div class="hashtag">#流浪動物</div>
+    <div class="hashtag">#攻擊事件</div>
+    <div class="hashtag">#學生</div>
+    <div class="hashtag">#校園</div>
+  </div>
+</div>
+<script>
+    function scrollToTop() {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'   // 平滑滾動
+      });
+    }
+    </script>
+</body>
+</html>
